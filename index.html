@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB API</title>
+    <!-- font awesome file-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- css files-->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body id="body">
+    <!-- search page -->
+    <section id="search-page">
+        <h2 id="logo">Movie App</h2>
+        <div>
+            <p id="search-box">Search any Movie</p>
+            <form action="" id="form">
+                <input id="search" type="text" placeholder="Movie name"></input>
+                <button id="btn" type="button" onclick={handleEvents()}>Search</button>
+            </form>
+        </div>
+
+    </section>
+    <!-- end of search page-->
+
+    <!-- result page-->
+    <section id="search-result">
+        <div id="movie-name">
+            <button type="button" id="back-icon" onclick={handleBack()}>
+                <i class="fa fa-arrow-left"></i>
+            </button>
+            
+            <h2 id="search-title">
+                Movie Title
+            </h2>
+        </div>
+        <div id="results">
+            
+        </div>
+
+    </section>
+    <!-- end of result page-->
+
+    <!-- message,no result page-->
+    <section id="offline-page">
+        <div id="message-box">
+            <p id="message">You are not connected to the internet</p>
+            <button id="back" type="button" onclick="{handleBack()}">Back</button>
+        </div>
+    </section>
+    <!-- end of no result page-->
+
+    <!-- details page -->
+    <section id="details-page">
+        <div id="card">
+            <button id="close" onclick={handleClose()}>
+                <i class="fa fa-times">
+                </i>
+                </button>
+                <div id="card-body">
+                    <p id="card-name">
+                       Movie Name 
+                    </p>
+
+                    <img src="" alt="" id="card-img">
+                    <p id="card-title"><strong>Title :</strong><span id="title">kjhgfd</span></p>
+                    <p id="card-rating"><strong>Rating :</strong><span id="rating">8</span></p>
+                    <p id="card-language"><strong>Language :</strong><an id="language">English</an></p>
+                    <p id="card-date"><strong>Release Date :</strong><span id="date">2014-04-12</span></p>
+                    <p id="card-description"><strong>Description :</strong><span id="description">lijfdsdfgjjkh</span></p>
+                </div>
+        </div>
+    </section>
+    <!-- end of details page-->
+
+    <!-- js file source-->
+    <script src="/app.js"></script>
+</body>
+</html>
